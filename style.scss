@@ -1,4 +1,7 @@
---- --- //
+---
+---
+
+//
 // IMPORTS
 //
 
@@ -15,9 +18,9 @@ html {
 }
 
 body {
-  background: $black;
+	background: $white;
   font: 18px/1.4 $helvetica;
-  color: $white;
+  color: $darkGray;
 }
 
 .container {
@@ -38,7 +41,6 @@ body {
   position: absolute !important;
   width: 1px;
   word-wrap: normal !important;
-
   /* Many screen reader and browser combinations announce broken words as they would appear visually. */
   &:focus {
     position: static !important;
@@ -73,14 +75,9 @@ body {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $white;
+  color: $darkerGray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -94,7 +91,6 @@ h6 {
 
 h1 {
   font-size: 30px;
-
   a {
     color: inherit;
   }
@@ -110,7 +106,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $white;
+  color: $gray;
 }
 
 p {
@@ -120,16 +116,13 @@ p {
 a {
   color: $blue;
   text-decoration: none;
-  cursor: pointer;
-
-  &:hover,
-  &:active {
+	cursor: pointer;
+  &:hover, &:active {
     color: $blue;
   }
 }
 
-ul,
-ol {
+ul, ol {
   margin: 15px 0;
   padding-left: 30px;
 }
@@ -142,25 +135,19 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul,
-ul ol,
-ul ul,
-ol ol {
+ol ul, ul ol, ul ul, ol ol {
   margin: 0;
 }
 
-ul ul,
-ol ul {
+ul ul, ol ul {
   list-style-type: circle;
 }
 
-em,
-i {
+em, i {
   font-style: italic;
 }
 
-strong,
-b {
+strong, b {
   font-weight: bold;
 }
 
@@ -175,7 +162,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $white;
+  color: $gray;
 }
 
 // Specify the color of the selection
@@ -183,7 +170,6 @@ img {
   color: $black;
   background: $lightGray;
 }
-
 ::selection {
   color: $black;
   background: $lightGray;
@@ -193,12 +179,12 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix:after {
-  clear: both;
+    clear: both;
 }
 
 /*********************/
@@ -284,7 +270,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $blue;
+    color: $darkGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -300,12 +286,12 @@ nav {
 // .main
 //
 
-.posts>.post {
+.posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
 
-.posts>.post:last-child {
+.posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
@@ -315,7 +301,7 @@ nav {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
-    color: $white;
+    color: $gray;
     font-size: 22px;
     font-style: italic;
   }
@@ -344,7 +330,7 @@ footer {
 
 
 table {
-  border-collapse: collapse;
+  border-collapse:collapse;
   border: 1px solid #eee;
 
   th {
